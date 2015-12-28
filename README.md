@@ -1,2 +1,2 @@
 # CSS-Concepts
-The source some CSS concepts elaborated by me
+Some CSS concepts elaborated by me
