@@ -1,0 +1,349 @@
+body {
+   background-color: #E8E8E8;
+   color: #6600cc;
+   font: 0.9rem/1.5rem 'Muli', "Helvetica Neue", Helvetica, Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+a {
+   color: inherit;
+   text-decoration: none;
+   transition: all 0.3s linear;
+}
+span {
+   font-size: 15px;
+}
+footer {
+   background-color: #fff;
+   border-radius:5px;
+   font-size: 16px;
+   margin:10px auto;
+   max-width: 930px;
+   padding:0 20px;
+}
+footer div {
+   text-align: center;
+   padding: 20px 0;
+}
+#source {
+   float: right;
+   margin: -35px 20px;
+   font-size: 16px;
+}
+#source a{
+   color:#666;
+}
+#name {
+   cursor: pointer;
+   transition: all .3s linear;
+   -webkit-transition: all .3s linear;
+}
+#name:hover {
+   transform: scale(1.5);
+}
+.container {
+   display: block;
+   width: 260px;
+   height: 260px;
+   margin: 60px auto 100px auto;
+   outline: 1px solid #ffcc00;
+}
+.container2 {
+   display: block;
+   border-radius: 2px;
+   width: 260px;
+   height: 260px;
+   margin: 60px auto 100px auto;
+   border: 10px solid #ffcc00;
+}
+.box {
+   width: 200px;
+   height: 200px;
+   background: #4ADFD0;
+   outline: 1px solid #6600cc;
+   padding: 30px;
+   background-clip: content-box;
+   -webkit-animation: anirot 2s infinite;
+   /* Chrome, Safari, Opera */
+   animation: anirot 2s infinite;
+   -moz-transition: all .3s linear;
+   -o-transition: all .3s linear;
+   -webkit-transition: all .3s linear;
+}
+.box:hover {
+   background-color: transparent;
+}
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes anirot {
+   100% {
+      -webkit-transform: rotate(90deg);
+   }
+}
+
+@keyframes anirot {
+   100% {
+      transform: rotate(90deg);
+   }
+}
+h1#header {
+   background-color: #6600cc;
+   border-radius: 5px;
+   color: #fff;
+   font-weight: 400;
+   margin: 20px auto 0 auto;
+   padding: 20px;
+   max-width: 930px;
+}
+h2 {
+   border-width: 1px 0 0 0;
+   border-color: #E1E1E1;
+   border-style: dashed;
+   font-weight: 400;
+   margin: 10px auto;
+   max-width: 1000px;
+   padding: 10px;
+}
+#content h2:first-child {
+   border: 0;
+   padding: 0 10px;
+}
+.box2 {
+   width: 200px;
+   height: 200px;
+   background: red;
+   outline: 1px solid #6600cc;
+   padding: 30px;
+   background-clip: content-box;
+   -webkit-animation: changeColor 2s infinite;
+   /* Chrome, Safari, Opera */
+   animation: changeColor 2s infinite;
+   z-index: 1000;
+}
+.box3 {
+   height: 20px;
+   display: inline-block;
+   background-color: grey;
+   box-sizing: border-box;
+   background-clip: content-box;
+   width: 100%;
+   -webkit-animation: changeColor2 2s infinite;
+   /* Chrome, Safari, Opera */
+   animation: changeColor2 2s infinite;
+   z-index: 1000;
+}
+.t {
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   background: red;
+   position: absolute;
+   transform: matrix(0.866, 0.5, -0.7, 0.866, 0, 0);
+}
+.t3 {
+   -webkit-animation: furSquare 5s infinite;
+   /* Chrome, Safari, Opera */
+   animation: furSquare 5s infinite;
+}
+.t4 {
+   -webkit-animation: furSquare 2s infinite;
+   /* Chrome, Safari, Opera */
+   animation: furSquare 2s infinite;
+}
+.t5 {
+   -webkit-animation: furSquare 10s infinite;
+   /* Chrome, Safari, Opera */
+   animation: furSquare 10s infinite;
+}
+.t6 {
+   -webkit-animation: furSquare 20s infinite;
+   /* Chrome, Safari, Opera */
+   animation: furSquare 20s infinite;
+}
+
+/* Code for Chrome, Safari and Opera */
+
+@-webkit-keyframes changeColor {
+   /*from {background-color: red;}
+    to {background-color: blue;}*/
+   50% {
+      background-color: blue;
+      margin: 0 105px;
+   }
+}
+@keyframes changeColor {
+   50% {
+      background-color: blue;
+      margin: 0 105px;
+   }
+}
+@-webkit-keyframes changeColor2 {
+   50% {
+      background-color: orange;
+      height: 400px;
+   }
+}
+@keyframes changeColor2 {
+   50% {
+      background-color: orange;
+      height: 400px;
+   }
+}
+@-webkit-keyframes furSquare {
+   0% {
+      background: red;
+      margin-left: 0px;
+      top: 0px;
+   }
+   25% {
+      background: orange;
+      margin-left: 200px;
+      margin-top: 0px;
+   }
+   50% {
+      background: blue;
+      margin-left: 200px;
+      margin-top: 200px;
+   }
+   75% {
+      background: green;
+      margin-left: 0px;
+      margin-top: 200px;
+   }
+   100% {
+      background: red;
+      margin-left: 0px;
+      margin-top: 0px;
+   }
+}
+@keyframes furSquare {
+   0% {
+      background: red;
+      margin-left: 0px;
+      margin-top: 0px;
+   }
+   25% {
+      background: orange;
+      margin-left: 200px;
+      margin-top: 0px;
+   }
+   50% {
+      background: blue;
+      margin-left: 200px;
+      margin-top: 200px;
+   }
+   75% {
+      background: green;
+      margin-left: 0px;
+      margin-top: 200px;
+   }
+   100% {
+      background: red;
+      margin-left: 0px;
+      margin-top: 0px;
+   }
+}
+.expand {
+   height: 400px;
+   margin: 0 auto;
+   width: 300px;
+}
+div#content {
+   background-color: #fff;
+   border-radius: 5px;
+   display: block;
+   margin: 20px auto 20px auto;
+   max-width: 970px;
+   padding: 4px 0 10px 0;
+}
+#copy {
+   display: inline;
+   font-size: 20px;
+   float: right;
+}
+#name {
+   font-size: 26px;
+   margin-left: 90px;
+   margin-top: 110px;
+   position: absolute;
+   z-index: 1000;
+}
+.code {
+   background-color: #DDE1D7;
+   border-radius: 5px;
+   color: #595959;
+   display: block;
+   margin: 0 auto 30px auto;
+   padding: 8px;
+   max-width: 520px;
+}
+
+@charset 'UTF-8';
+@font-face {
+   font-family: 'LigatureSymbols';
+   src: url('LigatureSymbols-2.11.eot');
+   src: url('fonts/BebasNeue.eot?#iefix') format('embedded-opentype');
+   src: url('LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'), url('LigatureSymbols-2.11.woff') format('woff'), url('LigatureSymbols-2.11.ttf') format('truetype'), url('LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+.lsf {
+   font-family: 'LigatureSymbols';
+   -webkit-text-rendering: optimizeLegibility;
+   -moz-text-rendering: optimizeLegibility;
+   -ms-text-rendering: optimizeLegibility;
+   -o-text-rendering: optimizeLegibility;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-font-smoothing: antialiased;
+   -ms-font-smoothing: antialiased;
+   -o-font-smoothing: antialiased;
+   font-smoothing: antialiased;
+   -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+   -moz-font-feature-settings: "liga=1, dlig=1";
+   -ms-font-feature-settings: "liga" 1, "dlig" 1;
+   -o-font-feature-settings: "liga" 1, "dlig" 1;
+   font-feature-settings: "liga" 1, "dlig" 1;
+   font-weight: 400;
+}
+.lsf-icon-p:before {
+   content: attr(data-icon);
+   font-size: 130%;
+   font-weight: 400;
+   font-family: 'LigatureSymbols';
+   -webkit-text-rendering: optimizeLegibility;
+   -moz-text-rendering: optimizeLegibility;
+   -ms-text-rendering: optimizeLegibility;
+   -o-text-rendering: optimizeLegibility;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-font-smoothing: antialiased;
+   -ms-font-smoothing: antialiased;
+   -o-font-smoothing: antialiased;
+   font-smoothing: antialiased;
+   -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+   -moz-font-feature-settings: "liga=1, dlig=1"-ms-font-feature-settings: "liga" 1, "dlig" 1;
+   -o-font-feature-settings: "liga" 1, "dlig" 1;
+   font-feature-settings: "liga" 1, "dlig" 1;
+}
+.lsf-icon:before {
+   content: attr(data-icon);
+   font-size: 130%;
+   margin-right: 0.3em;
+   font-weight: 400;
+   font-family: 'LigatureSymbols';
+   -webkit-text-rendering: optimizeLegibility;
+   -moz-text-rendering: optimizeLegibility;
+   -ms-text-rendering: optimizeLegibility;
+   -o-text-rendering: optimizeLegibility;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-font-smoothing: antialiased;
+   -ms-font-smoothing: antialiased;
+   -o-font-smoothing: antialiased;
+   font-smoothing: antialiased;
+   -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+   -moz-font-feature-settings: "liga=1, dlig=1"-ms-font-feature-settings: "liga" 1, "dlig" 1;
+   -o-font-feature-settings: "liga" 1, "dlig" 1;
+   font-feature-settings: "liga" 1, "dlig" 1;

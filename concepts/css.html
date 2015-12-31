@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>CSS Concepts</title>
+	<link rel="stylesheet" type="text/css" href="../css/concepts.css">
+	<script type="text/javascript" src="../js/libs/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			var width = $(window).width();
+			var height = $(window).height();
+
+			$(".container").click(function() {
+				$(".box").css({
+					backgroundColor: "rgb(" + Math.round(Math.random() * 200 + 7) + "," + Math.round(Math.random() * 200 + 7) + "," + Math.round(Math.random() * 200 + 7) + ")"
+				});
+			});
+
+		});
+	</script>
+</head>
+
+<body>
+
+	<h1 id="header">CSS Concepts
+		<span id="copy">By Nacho González-Garilleti</span>
+	</h1>
+
+	<div id="content">
+
+		<h2>Element Rotation Animation</h2>
+
+		<div id="source"><a href="https://github.com/Nachox07/CSS-Concepts"><span class="lsf-icon" data-icon="github">View on Github</span></a></div>
+
+		<div class="example">
+			<div class="container">
+				<div id="name">Click me</div>
+				<div class="box"></div>
+			</div>
+		</div>
+		<div class="code">
+			<div>
+				<strong>CSS Code</strong>
+				<pre>
+@keyframes anirot {
+   100% {
+      transform: rotate(90deg);
+   }
+}</pre>
+			</div>
+		</div>
+
+		<h2>Element Margin &amp; Color Animation</h2>
+
+		<div class="example">
+			<div class="container" style="width:365px;">
+				<div class="box2"></div>
+			</div>
+		</div>
+		<div class="code">
+			<div>
+				<strong>CSS Code</strong>
+				<pre>
+@keyframes changeColor {
+   50% {
+      background-color: blue;
+      margin: 0 105px;
+   }
+}</pre>
+			</div>
+		</div>
+
+		<h2>Element Movement Up + Right + Down + Left</h2>
+
+		<div class="example">
+			<div class="expand">
+				<div class="t t3"></div>
+				<div class="t t4"></div>
+				<div class="t t5"></div>
+				<div class="t t6"></div>
+			</div>
+		</div>
+		<div class="code">
+			<div>
+				<strong>CSS Code</strong>
+				<pre>
+@keyframes furSquare {
+   0% {
+      background: red;
+      margin-left: 0px;
+      margin-top: 0px;
+   }
+   25% {
+      background: orange;
+      margin-left: 200px;
+      margin-top: 0px;
+   }
+   50% {
+      background: blue;
+      margin-left: 200px;
+      margin-top: 200px;
+   }
+   75% {
+      background: green;
+      margin-left: 0px;
+      margin-top: 200px;
+   }
+   100% {
+      background: red;
+      margin-left: 0px;
+      margin-top: 0px;
+   }
+}</pre>
+			</div>
+		</div>
+
+		<h2>Element Width &amp; Color Animation like a progress bar</h2>
+
+		<div class="example">
+			<div class="container2" style="height:400px;">
+				<div class="box3"></div>
+			</div>
+		</div>
+		<div class="code">
+			<div>
+				<strong>CSS Code</strong>
+				<pre>
+@keyframes changeColor2 {
+   50% {
+      background-color: orange;
+      height: 400px;
+   }
+}</pre>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<div>Nacho González-Garilleti © 2015</div>
+	</footer>
+</body>
+</html>
